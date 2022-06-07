@@ -17,7 +17,7 @@ namespace mp3TagWriter
             {
                 string title = Path.GetFileNameWithoutExtension(file);
 
-                //Replace special characters/extra spaces from title
+                //Replace special and invalid characters/extra spaces from title
                 string updatedTitle = title.Replace("\t", " ");
                 while (updatedTitle.IndexOf("  ") > 0)
                 {
