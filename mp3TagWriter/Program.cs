@@ -7,6 +7,7 @@ namespace mp3TagWriter
     {
         static void Main(string[] args)
         {
+            //Folder Path
             string folderPath = @"E:\YTDL\Downloads\GS";
             string[] files = Directory.GetFiles(folderPath);
             TagLib.File mp3 = null;
